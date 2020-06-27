@@ -1,0 +1,402 @@
+/**********************************************
+****************** style *********************
+*********************************************/
+
+body, 
+button, 
+input, 
+textarea {
+    color: black ; 
+    font-size:16px; 
+    line-height: 1.8; 
+}
+
+body { 
+    background-color: #EDEDED; 
+    margin:0 ; 
+}
+
+img { 
+    display: block ; 
+    width: 100% ; 
+    height: auto;
+}
+ footer { 
+    background-color: #000 ; 
+    color : white; 
+    padding: 1.5em ; 
+    text-align: center; 
+    font-weight: bold; 
+    font-size: 1.2em ;  
+}
+
+header {
+    background-color: #000 ; 
+}
+.sidebar_right {
+    background-color: #EDEDED ; 
+}
+
+
+@media screen and (min-width: 1120px )
+{
+    .content-area {
+        display: flex ; 
+    }
+    .sidebar_right{
+        flex: 0 0 320px; 
+    }
+}
+
+/*---------------------------------------------------
+                 HEADER STYLE  
+---------------------------------------------------*/
+
+.site-header {
+    height: 400px; 
+    display: flex; 
+    flex-flow: column; 
+}
+
+.site-info {
+    flex-grow: 1 ; 
+}
+.site-title {
+    color: white ; 
+    font-size: 3em; 
+    text-transform: uppercase;
+    text-align: center; 
+}
+
+.site-description {
+    color: yellow; 
+    text-align: center ;
+    font-size: 20px;  
+}
+
+.main-menu {
+    background-color: yellow ; 
+    color : black
+}
+.main-menu ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+}
+.main-menu ul a {
+    text-decoration: none ; 
+    color: black ; 
+    font-size: 1.1em; 
+    font-weight: bold ; 
+    display: block; 
+    transition: all .5 ease ; 
+    padding: .6em 1em  ; 
+}
+
+.main-menu ul a:hover {
+    background-color: #000; 
+    color: white ; 
+}
+
+@media screen and (min-width:600px) {
+    .main-menu ul {
+        display: flex;
+        flex-wrap: wrap ; 
+        justify-content: space-between; 
+        text-align: center; 
+    }
+    .main-menu ul li {
+        flex-grow: 1; 
+        flex-basis: auto; 
+        flex-shrink: 0 ; 
+    }
+}
+
+
+/*----------------------------------------------------
+               POSTS STYLE
+-----------------------------------------------------*/
+
+.main_content_area {
+    padding: 2em; 
+}
+.post {
+    background-color: white; 
+    margin-bottom: 1em; 
+}
+
+.post a { 
+    text-decoration: none; 
+    color: black ; 
+}
+
+.post-description h2 { 
+    background-color: yellow; 
+    padding: 20px; 
+    text-align: center; 
+}
+
+
+@media screen and (min-width:812px) 
+{
+    .posts 
+    {
+        display: flex; 
+        justify-content: space-between;
+        flex-wrap: wrap ; 
+    }
+    .post {
+        flex-basis: 49%; 
+        
+    }
+}
+
+@media screen and (min-width:1112px) 
+{
+    .post-one-third {
+        flex-basis: 32%; 
+    }
+    .post-full {
+        flex-basis: 100%; 
+    }
+}
+
+
+/*----------------------------------------------------
+               WATCH START  STYLE
+-----------------------------------------------------*/
+
+.section-header {
+    color:black; 
+    font-size:3em ; 
+    text-align: center; 
+}
+.watch-card {
+    margin-bottom: 1em; 
+}
+
+.watch-content { 
+    background-color: #000; 
+    color: #fff; 
+    padding: 3em; 
+    
+}
+
+.watch-content h2 { 
+    font-size: 2em;  
+   font-weight: 300; 
+   margin: 0; 
+   text-transform: uppercase; 
+    
+}
+.movie-info {
+    font-weight: bold ; 
+
+}
+
+.movie-info span {
+    padding: 1.5em; 
+}
+
+.movie-story {
+ margin: 1em 0 ; 
+}
+
+.movie-info a {
+    color: white; 
+    font-weight: bold;
+   }
+
+/*----------------------------------------------------
+               WATCH END  STYLE
+-----------------------------------------------------*/
+   @media screen and (min-width:812px)
+   {
+       .watch-card {
+           display: flex;
+       }
+       .watch-content {
+           display: flex; 
+           justify-content: center ; 
+           flex-flow: column; 
+       }
+       .right-img {
+           order:2 ; 
+       }
+   }
+
+/*----------------------------------------------------
+               DOWNLOAD  STYLE
+-----------------------------------------------------*/
+
+.download-card {
+    margin-bottom: 1em; 
+}
+
+.download-content {
+    background-color: white; 
+ 
+}
+
+.download-content a {
+    background-color : #000 ; 
+    color : #fff ; 
+    padding: 1em 2em ; 
+    text-decoration: none; 
+     text-transform: capitalize; 
+}
+.download-content a i { 
+    font-size: 2.5em ; 
+}
+/* 
+.download-info { 
+    padding: 1em 2em ;
+} */
+
+.download-info h4 {
+   
+}
+
+.download-info p {
+  
+    font-size: .9em;
+}
+
+
+.download-cast img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%; 
+}
+
+.download-rating {
+    background-color: yellow; 
+    color: black ; 
+   
+    font-size: 1em; 
+}
+
+.download-rating .rate {
+    font-size: 2.5em ;
+    font-weight: bold; 
+
+}
+
+.download-content {
+    display: flex; 
+    flex-flow: column;
+}
+.download-content a, .download-rating {
+    display: flex; 
+    flex-flow: column;
+    justify-content: center;
+    align-items: center; 
+    
+}
+
+.download-genre, .download-cast {
+    display: flex; 
+    flex-wrap: wrap ;
+    text-align: center;  
+}
+.download-info h4 {
+    flex-basis: 20%; 
+}
+
+.download-genre {
+   margin-bottom: 10px; 
+}
+
+@media screen and (min-width: 810px )
+{
+    .download-content { 
+        display: flex; 
+        flex-flow: row;
+    }
+    .download-content a  {
+        flex-grow: 1 ; 
+    }
+    .download-info {
+        flex-grow: 2;
+    }
+   
+}
+
+/*----------------------------------------------------
+               GALLERY  STYLE
+-----------------------------------------------------*/
+
+.gallery-imgs {
+    display: flex; 
+    flex-wrap: wrap; 
+}
+
+.gallery-img {
+    height: 250px; 
+    flex-grow: 1; 
+   margin: 0 0 8px 8px
+}
+.gallery-img img {
+    height: 100%;
+    object-fit: cover; 
+
+}
+
+.gallery-img:nth-child(4n+1){
+    flex-basis: 250px;
+}
+
+.gallery-img:nth-child(4n+2){
+    flex-basis: 325px;
+}
+
+.gallery-img:nth-child(4n+3){
+    flex-basis: 180px;
+}
+.gallery-img:nth-child(4n+4){
+    flex-basis: 380px;
+}
+
+
+/*----------------------------------------------------
+               SIDEBAR  STYLE
+-----------------------------------------------------*/
+
+.sidebar_right {
+    padding: 2em ; 
+}
+
+.widget  {
+    background-color: white ; 
+    color: #000; 
+    margin-bottom: 2em ; 
+}
+
+.widget-content {
+    margin: .5em 2em ; 
+}
+
+.sidebar_right ul {
+    list-style-type:none;
+    margin-left: 1em; 
+}
+
+
+.sidebar_right ul a {
+    text-decoration: none ; 
+    color: #000 ; 
+    display: block;
+    font-weight: bold; 
+}
+
+@media screen and (min-width:810px) and (max-width:1120px)
+{
+    .sidebar_right {
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: space-between; 
+    }
+    .widget {
+        flex-basis: 48.8%; 
+    }
+}
